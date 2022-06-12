@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>C103</title>
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js" target="_blank"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"></script>
+  </head>
+  <body background="OIP.jfif" style="color: white">
+    <center>
+    <hr><h1>FACE RECOGNITION WEB APP</h1><hr>
+    <p style="font-size: 20px;">This model is trained to identify the following objects:</p>
+    <h2 class="btn btn-primary">Me</h2><br>
+    <h2 class="btn btn-danger">Not me</h2><br><br>
+    <div id="camera" style="height:300; width:300;"></div><br><br>
+    <div id="output"></div><br><br>
+    <button onclick="takesnapshot()" class="btn btn-success">Capture Image</button><br><br><br>
+
+    <button onclick="Image()" class="btn btn-warning">Identify Image</button><br><br>
+    <p style="font-size: 15px;">Accuracy: <span id="accuracy"></span></p>
+    <p style="font-size: 15px;">Object: <span id="object"></span></p>
+    </center>
+    <script src="main.js"></script>
+  </body>
+</html>
